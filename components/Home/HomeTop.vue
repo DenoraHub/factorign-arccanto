@@ -10,7 +10,8 @@
         </slot>
         <v-row class="pt-5">
           <v-col cols="6">
-            <v-btn block color="secondary" class="text-none font-weight-bold" variant="elevated" rounded="lg">
+            <v-btn block color="secondary" class="text-none font-weight-bold" variant="elevated" rounded="lg"
+                   @click="pageOptions.modal = !pageOptions.modal">
               Contactar un asesor
             </v-btn>
           </v-col>
@@ -29,10 +30,23 @@
         </video>
       </v-col>
     </v-row>
+    <v-dialog v-model="pageOptions.modal" scrollable width="auto">
+      <template v-slot:default="{isActive}">
+        <v-card>
+          <contact-form></contact-form>
+        </v-card>
+      </template>
+    </v-dialog>
   </v-container>
 </template>
 
 <script setup lang="ts">
+
+import ContactForm from "~/components/Form/ContactForm.vue";
+
+const pageOptions = reactive({
+  modal: false
+})
 
 function goToAction() {
   window.open('https://calendly.com/d/5dr-q65-4xk/obten-tu-factoraje-con-arccanto-acelera-tu-crecimiento')

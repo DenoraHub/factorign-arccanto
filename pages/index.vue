@@ -23,6 +23,16 @@
 
   <who-section></who-section>
 
+  <why-section></why-section>
+
+  <how-section></how-section>
+
+  <meet-section></meet-section>
+
+  <sub-footer-section></sub-footer-section>
+
+  <footer-bottom></footer-bottom>
+
 </template>
 
 <script setup lang="ts">
@@ -31,6 +41,10 @@ import BrandSection from "~/components/Home/BrandSection.vue";
 import QuestionSection from "~/components/Home/QuestionSection.vue";
 import LineSection from "~/components/Home/LineSection.vue";
 import WhoSection from "~/components/Home/WhoSection.vue";
+import WhySection from "~/components/Home/WhySection.vue";
+import HowSection from "~/components/Home/HowSection.vue";
+import MeetSection from "~/components/Home/MeetSection.vue";
+import SubFooterSection from "~/components/Home/SubFooterSection.vue";
 
 const {client} = usePrismic();
 
