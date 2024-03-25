@@ -18,6 +18,37 @@ interface HomepageDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   home_top_titlle: prismic.RichTextField;
+
+  /**
+   * Home Top Description field in *homepage*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepage.home_top_description
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  home_top_description: prismic.RichTextField /**
+   * Brand Description field in *homepage*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepage.brand_description
+   * - **Tab**: Brands
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */;
+  brand_description: prismic.RichTextField;
+
+  /**
+   * Brand Image field in *homepage*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepage.brand_image
+   * - **Tab**: Brands
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  brand_image: prismic.ImageField<never>;
 }
 
 /**
