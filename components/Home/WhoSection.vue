@@ -38,11 +38,11 @@
       </v-row>
       <v-row class="mt-10">
         <v-col class="text-center">
-          <v-btn color="secondary" class="mx-2 text-none font-weight-bold" variant="elevated" rounded="lg"
+          <v-btn color="secondary" class="mx-2 text-none font-weight-bold" variant="elevated"
                  @click="pageOptions.modal = !pageOptions.modal">
             Contactar un asesor
           </v-btn>
-          <v-btn color="white" class="mx-2 text-none font-weight-bold" variant="elevated" rounded="lg"
+          <v-btn color="white" class="mx-2 text-none font-weight-bold" variant="elevated"
                  @click="goToAction">
             <span class="text-secondary">Agendar reunión</span>
           </v-btn>

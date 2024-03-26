@@ -1,5 +1,5 @@
 <template>
-  <v-btn color="secondary" class="text-none font-weight-bold" variant="outlined" rounded="lg" @click="goToAction">
+  <v-btn color="secondary" class="text-none font-weight-bold" variant="outlined" @click="goToAction">
     {{ label }}
   </v-btn>
 </template>

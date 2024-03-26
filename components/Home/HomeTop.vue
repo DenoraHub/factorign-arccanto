@@ -10,13 +10,13 @@
         </slot>
         <v-row class="pt-5">
           <v-col cols="6">
-            <v-btn block color="secondary" class="text-none font-weight-bold" variant="elevated" rounded="lg"
+            <v-btn block color="secondary" class="text-none font-weight-bold" variant="elevated"
                    @click="pageOptions.modal = !pageOptions.modal">
               Contactar un asesor
             </v-btn>
           </v-col>
           <v-col cols="6">
-            <v-btn block color="secondary" class="text-none font-weight-bold" variant="outlined" rounded="lg"
+            <v-btn block color="secondary" class="text-none font-weight-bold" variant="outlined"
                    @click="goToAction">
               Agendar reunión
             </v-btn>

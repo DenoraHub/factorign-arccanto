@@ -8,7 +8,7 @@
               <h2>Agenda una reunión</h2>
               <p class="mt-5">Inicia tu solicitud y acelera tu crecimiento</p>
               <div class="d-flex mt-10">
-                <v-btn color="primary" class=" px-10 text-none font-weight-bold" variant="elevated" rounded="lg"
+                <v-btn color="primary" class=" px-10 text-none font-weight-bold" variant="elevated"
                        @click="goToAction">
                   Agendar reunión
                 </v-btn>

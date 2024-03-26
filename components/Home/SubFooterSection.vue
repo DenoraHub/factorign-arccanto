@@ -21,7 +21,7 @@
     </v-row>
     <v-row class="mt-15">
       <v-col class="d-flex justify-center">
-        <video controls id="myVideo" class="w-100">
+        <video controls id="myVideo" class="w-100" autoplay muted>
           <source src="/video/video_factoraje.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
@@ -33,7 +33,7 @@
             el éxito de
             Republic Cosmetics y Madison.</p>
           <div class="d-flex mt-10">
-            <v-btn color="secondary" class=" px-10 text-none font-weight-bold" variant="elevated" rounded="lg"
+            <v-btn color="secondary" class=" px-10 text-none font-weight-bold" variant="elevated"
                    @click="goToAction">
               Agendar reunión
             </v-btn>
@@ -48,13 +48,13 @@
     </v-row>
     <v-row class="pt-5 justify-center">
       <v-col cols="3">
-        <v-btn block color="secondary" class="text-none font-weight-bold" variant="elevated" rounded="lg"
+        <v-btn block color="secondary" class="text-none font-weight-bold" variant="elevated"
                @click="pageOptions.modal = !pageOptions.modal">
           Contactar un asesor
         </v-btn>
       </v-col>
       <v-col cols="3">
-        <v-btn block color="secondary" class="text-none font-weight-bold" variant="outlined" rounded="lg"
+        <v-btn block color="secondary" class="text-none font-weight-bold" variant="outlined"
                @click="goToAction">
           Agendar reunión
         </v-btn>

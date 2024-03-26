@@ -23,6 +23,8 @@
 
   <who-section></who-section>
 
+  <client-section></client-section>
+
   <why-section></why-section>
 
   <how-section></how-section>
@@ -45,13 +47,12 @@ import WhySection from "~/components/Home/WhySection.vue";
 import HowSection from "~/components/Home/HowSection.vue";
 import MeetSection from "~/components/Home/MeetSection.vue";
 import SubFooterSection from "~/components/Home/SubFooterSection.vue";
+import ClientSection from "~/components/Home/ClientSection.vue";
 
 const {client} = usePrismic();
 
 const {data: home} = await useAsyncData("home", () =>
     client.getByUID("homepage", "homepage")
 );
-
-console.log(home)
 
 </script>
