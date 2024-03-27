@@ -7,3 +7,7 @@ html {
 button {
     border-radius: 14px !important;
 }
+
+.v-container {
+    max-width: 67.5rem !important;
+}

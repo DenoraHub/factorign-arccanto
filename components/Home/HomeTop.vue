@@ -1,7 +1,7 @@
 <template>
-  <v-container class="pt-16 fill-height">
-    <v-row class="pt-16 pt-sm-0">
-      <v-col cols="12" sm="6" class="d-flex flex-column pt-0 pt-sm-10">
+  <v-container style="padding-top: 250px; padding-bottom: 60px;">
+    <v-row>
+      <v-col cols="12" sm="6" class="d-flex flex-column">
         <slot name="title">
           <h1>Title</h1>
         </slot>
@@ -10,16 +10,14 @@
         </slot>
         <v-row class="pt-5">
           <v-col cols="6">
-            <v-btn block color="secondary" class="text-none font-weight-bold" variant="elevated"
-                   @click="pageOptions.modal = !pageOptions.modal">
+            <button type="button" class="v-btn bg-secondary text-none font-weight-bold" @click="pageOptions.modal = !pageOptions.modal">
               Contactar un asesor
-            </v-btn>
+            </button>
           </v-col>
           <v-col cols="6">
-            <v-btn block color="secondary" class="text-none font-weight-bold" variant="outlined"
-                   @click="goToAction">
+            <button type="button" class="v-btn text-secondary v-btn--variant-outlined text-none font-weight-bold" @click="goToAction">
               Agendar reunión
-            </v-btn>
+            </button>
           </v-col>
         </v-row>
       </v-col>
@@ -56,10 +54,16 @@ function goToAction() {
 
 <style>
 h1 {
-  font-size: 42px !important;
+  font-size: 3rem !important;
 }
 
 p {
-  font-size: 20px !important;
+  font-size: 1.25rem !important;
+}
+
+.v-btn {
+  padding: .875rem 2.5rem !important;
+  border-radius: .5rem !important;
+  font-size: 1rem !important;
 }
 </style>

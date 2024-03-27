@@ -33,10 +33,9 @@
             el éxito de
             Republic Cosmetics y Madison.</p>
           <div class="d-flex mt-10">
-            <v-btn color="secondary" class=" px-10 text-none font-weight-bold" variant="elevated"
-                   @click="goToAction">
+            <button type="button" class="v-btn bg-secondary text-none font-weight-bold" @click="goToAction">
               Agendar reunión
-            </v-btn>
+            </button>
           </div>
         </div>
       </v-col>
@@ -48,16 +47,16 @@
     </v-row>
     <v-row class="pt-5 justify-center">
       <v-col cols="3">
-        <v-btn block color="secondary" class="text-none font-weight-bold" variant="elevated"
-               @click="pageOptions.modal = !pageOptions.modal">
+        <button type="button" class="v-btn bg-secondary text-none font-weight-bold"
+                @click="pageOptions.modal = !pageOptions.modal">
           Contactar un asesor
-        </v-btn>
+        </button>
       </v-col>
       <v-col cols="3">
-        <v-btn block color="secondary" class="text-none font-weight-bold" variant="outlined"
-               @click="goToAction">
+        <button type="button" class="v-btn text-secondary v-btn--variant-outlined text-none font-weight-bold"
+                @click="goToAction">
           Agendar reunión
-        </v-btn>
+        </button>
       </v-col>
     </v-row>
     <v-dialog v-model="pageOptions.modal" scrollable width="auto">

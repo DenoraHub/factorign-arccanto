@@ -1,6 +1,6 @@
 <template>
   <div class="w-100 bg-primary">
-    <v-container class="my-10">
+    <v-container style="padding-top: 7rem; padding-bottom: 7rem;">
       <v-row>
         <v-col class="text-center">
           <h1 class="text-white">Somos la única empresa de factoraje en México que diseña el financiamiento pensando en
@@ -12,24 +12,24 @@
       </v-row>
       <v-row class="mt-5">
         <v-col>
-          <div class="card-description px-8 py-10 text-primary fill-height ga-4">
-            <img src="/images/WhoFirstImage.png" height="112" width="83" alt="">
+          <div class="card-description px-12 py-10 text-primary fill-height ga-4">
+            <img src="/images/WhoFirstImage.png" height="68" width="49" alt="">
             <h2>Eres proveedor de empresas AAA.</h2>
             <p>Obtén acceso inmediato a financiamiento flexible, garantizando fluidez en tu operación al trabajar con
               clientes de alta calificación.</p>
           </div>
         </v-col>
         <v-col>
-          <div class="card-description px-8 py-10 text-primary fill-height ga-4">
-            <img src="/images/WhoSecondImage.png" width="113" height="109" alt="">
+          <div class="card-description px-12 py-10 text-primary fill-height ga-4">
+            <img src="/images/WhoSecondImage.png" width="68" height="68" alt="">
             <h2>Buscas crecimiento acelerado y rápido.</h2>
             <p>Aprovecha oportunidades de expansión sin demoras con nuestra línea de factoraje diseñada para impulsar tu
               escala de negocio.</p>
           </div>
         </v-col>
         <v-col>
-          <div class="card-description px-8 py-10 text-primary fill-height ga-4">
-            <img src="/images/WhoThirdImage.png" height="108" width="79" alt="">
+          <div class="card-description px-12 py-10 text-primary fill-height ga-4">
+            <img src="/images/WhoThirdImage.png" height="68" width="49" alt="">
             <h2>Facturas más de 15 MDP (MXN) al año.</h2>
             <p>Para negocios con alto volumen de facturación, ofrecemos soluciones de liquidez adaptadas a tu nivel de
               operaciones y ambiciones de crecimiento.</p>
@@ -37,15 +37,13 @@
         </v-col>
       </v-row>
       <v-row class="mt-10">
-        <v-col class="text-center">
-          <v-btn color="secondary" class="mx-2 text-none font-weight-bold" variant="elevated"
-                 @click="pageOptions.modal = !pageOptions.modal">
+        <v-col class="text-center justify-center d-flex ga-4">
+          <button type="button" class="v-btn bg-secondary text-none font-weight-bold" @click="pageOptions.modal = !pageOptions.modal">
             Contactar un asesor
-          </v-btn>
-          <v-btn color="white" class="mx-2 text-none font-weight-bold" variant="elevated"
-                 @click="goToAction">
+          </button>
+          <button type="button" class="v-btn bg-white text-secondary text-none font-weight-bold" @click="goToAction">
             <span class="text-secondary">Agendar reunión</span>
-          </v-btn>
+          </button>
         </v-col>
       </v-row>
       <v-dialog v-model="pageOptions.modal" scrollable width="auto">
@@ -77,7 +75,8 @@ h1 {
 }
 
 h2 {
-  font-size: 24px !important;
+  font-size: 1.75rem !important;
+  line-height: 1.15 !important;
 }
 
 p {

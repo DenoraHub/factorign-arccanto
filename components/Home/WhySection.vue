@@ -1,13 +1,13 @@
 <template>
   <v-container class="my-10">
-    <v-row>
-      <v-col class="text-center">
+    <v-row class="justify-center">
+      <v-col cols="9" class="text-center">
         <h1 class="text-primary">¿Cuáles son los beneficios del factoraje ArCcanto?</h1>
       </v-col>
     </v-row>
     <v-row class="mt-10 justify-center">
-      <v-col cols="8">
-        <v-row>
+      <v-col cols="10">
+        <v-row class="justify-start">
           <v-col cols="4" class="d-flex align-center justify-center">
             <img src="/images/WhyFirstImage.png" width="101" height="90" alt="">
           </v-col>
@@ -20,7 +20,7 @@
       </v-col>
     </v-row>
     <v-row class="mt-10 justify-center">
-      <v-col cols="8">
+      <v-col cols="10">
         <v-row>
           <v-col cols="4" class="d-flex align-center justify-center">
             <img src="/images/WhySecondImage.png" width="112" height="113" alt="">
@@ -34,7 +34,7 @@
       </v-col>
     </v-row>
     <v-row class="mt-10 justify-center">
-      <v-col cols="8">
+      <v-col cols="10">
         <v-row>
           <v-col cols="4" class="d-flex align-center justify-center">
             <img src="/images/WhyThirdImage.png" width="97" height="97" alt="">

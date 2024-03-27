@@ -9,9 +9,6 @@
   </home-top>
 
   <brand-section>
-    <template #description>
-      <prismic-rich-text class="text-primary text-center" :field="home.data.brand_description"></prismic-rich-text>
-    </template>
     <template #image>
       <v-img :src="home.data.brand_image.url" width="auto"></v-img>
     </template>
