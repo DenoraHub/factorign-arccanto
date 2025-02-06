@@ -28,7 +28,11 @@
         </video>
       </v-col>
     </v-row>
-    <v-dialog v-model="pageOptions.modal" scrollable width="auto">
+    <v-dialog 
+      v-model="pageOptions.modal" 
+      scrollable
+      :width="dialogWidth"
+    >
       <template v-slot:default="{isActive}">
         <v-card>
           <contact-form></contact-form>
@@ -41,10 +45,15 @@
 <script setup lang="ts">
 
 import ContactForm from "~/components/Form/ContactForm.vue";
+import { useDisplay } from "vuetify";
+import { computed } from "vue";
 
 const pageOptions = reactive({
   modal: false
 })
+
+const { mdAndUp } = useDisplay()
+const dialogWidth = computed(() => mdAndUp.value ? '500' : '100')
 
 function goToAction() {
   window.open('https://api.leadconnectorhq.com/widget/otl/C4vprRctk?slug=factoring-arccanto')
@@ -67,3 +76,4 @@ p {
   font-size: 1rem !important;
 }
 </style>
+
