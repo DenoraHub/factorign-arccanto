@@ -8,7 +8,7 @@
 const props = defineProps({label: {default: 'Button label'}})
 
 function goToAction() {
-  window.open('https://calendly.com/d/5dr-q65-4xk/obten-tu-factoraje-con-arccanto-acelera-tu-crecimiento')
+  window.open('https://api.leadconnectorhq.com/widget/otl/C4vprRctk?slug=factoring-arccanto')
 }
 
 </script>
