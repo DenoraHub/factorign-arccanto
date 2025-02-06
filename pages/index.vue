@@ -1,16 +1,19 @@
 <template>
   <home-top>
     <template #title>
-      <prismic-rich-text class="text-primary" :field="home.data.home_top_titlle"></prismic-rich-text>
+      <prismic-rich-text class="text-primary" :field="home?.data?.home_top_titlle"></prismic-rich-text>
+      <h1>Factoraje Financiero
+        ArCcanto</h1>
     </template>
     <template #subtitle>
-      <prismic-rich-text class="text-primary" :field="home.data.home_top_description"></prismic-rich-text>
+      <prismic-rich-text class="text-primary" :field="home?.data?.home_top_description"></prismic-rich-text>
+      <h1>No esperes meses por el pago de tus clientes AAA. Convierte tus facturas en liquidez inmediata con la ayuda de ArCcanto.</h1>
     </template>
   </home-top>
 
   <brand-section>
     <template #image>
-      <v-img :src="home.data.brand_image.url" width="auto"></v-img>
+      <v-img :src="home?.data?.brand_image?.url || '/images/brand.png'" width="auto"></v-img>
     </template>
   </brand-section>
 
