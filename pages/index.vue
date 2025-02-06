@@ -7,7 +7,7 @@
     </template>
     <template #subtitle>
       <prismic-rich-text class="text-primary" :field="home?.data?.home_top_description"></prismic-rich-text>
-      <h1>No esperes meses por el pago de tus clientes AAA. Convierte tus facturas en liquidez inmediata con la ayuda de ArCcanto.</h1>
+      <p class="text-primary font-weight-medium">No esperes meses por el pago de tus clientes AAA. Convierte tus facturas en liquidez inmediata con la ayuda de ArCcanto.</p>
     </template>
   </home-top>
 
