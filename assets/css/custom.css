@@ -1,0 +1,34 @@
+.custom-pt {
+  padding-top: 250px !important;
+  ;
+  /* Default for large screens */
+}
+
+.custom-btn :deep(.v-btn__content) {
+  padding-top: 20rem !important;
+  padding-bottom: 2rem !important;
+}
+
+/* Extra small screens (xs) */
+@media (max-width: 600px) {
+  .custom-pt {
+    padding-top: 70px !important;
+    ;
+  }
+}
+
+/* Small screens (sm) */
+@media (min-width: 601px) and (max-width: 959px) {
+  .custom-pt {
+    padding-top: 250px !important;
+    ;
+  }
+}
+
+/* Medium screens (md) */
+@media (min-width: 960px) and (max-width: 1279px) {
+  .custom-pt {
+    padding-top: 250px !important;
+    ;
+  }
+}

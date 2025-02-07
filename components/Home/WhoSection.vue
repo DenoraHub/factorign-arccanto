@@ -36,16 +36,31 @@
           </div>
         </v-col>
       </v-row>
-      <v-row class="mt-10">
-        <v-col class="text-center justify-center d-flex ga-4">
-          <button type="button" class="v-btn bg-secondary text-none font-weight-bold" @click="pageOptions.modal = !pageOptions.modal">
-            Contactar un asesor
-          </button>
-          <button type="button" class="v-btn bg-white text-secondary text-none font-weight-bold" @click="goToAction">
-            <span class="text-secondary">Agendar reunión</span>
-          </button>
-        </v-col>
+      <v-row class="pt-5">
+          <v-col cols="12" lg="6">
+            <v-btn
+              size="x-large"
+              block
+              color="secondary"
+              class="text-none font-weight-bold custom-btn"
+              @click="pageOptions.modal = !pageOptions.modal"
+            >
+              Contactar un asesor
+            </v-btn> 
+          </v-col>
+          <v-col cols="12" lg="6">
+            <v-btn
+              size="x-large"
+              variant="outlined"
+              block
+              class="text-none bg-white font-weight-bold text-secondary v-btn--variant-outlined text-none font-weight-bold"
+              @click="goToAction"
+            >
+            Agendar reunión
+          </v-btn>
+          </v-col>
       </v-row>
+      
       <v-dialog 
       v-model="pageOptions.modal" 
       scrollable
@@ -70,7 +85,7 @@ const pageOptions = reactive({
 })
 
 const { mdAndUp } = useDisplay()
-const dialogWidth = computed(() => mdAndUp.value ? '500' : '100')
+const dialogWidth = computed(() => mdAndUp.value ? '500' : '400')
 
 function goToAction() {
   window.open('https://api.leadconnectorhq.com/widget/otl/C4vprRctk?slug=factoring-arccanto')

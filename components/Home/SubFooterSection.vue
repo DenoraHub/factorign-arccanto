@@ -15,12 +15,12 @@
           </div>
         </div>
       </v-col>
-      <v-col class="d-flex justify-end">
+      <v-col  class="d-none d-sm-flex justify-end">
         <img src="/images/SubFooterFirstImage.png" width="400" height="456" alt="">
       </v-col>
     </v-row>
     <v-row class="mt-15">
-      <v-col class="d-flex justify-center">
+      <v-col cols="12" sm="6" class="d-flex justify-center">
         <video controls id="myVideo" class="w-100" autoplay muted>
           <source src="/video/video_factoraje.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
@@ -82,7 +82,7 @@ const pageOptions = reactive({
 })
 
 const { mdAndUp } = useDisplay()
-const dialogWidth = computed(() => mdAndUp.value ? '500' : '100')
+const dialogWidth = computed(() => mdAndUp.value ? '500' : '400')
 
 function goToAction() {
   window.open('https://api.leadconnectorhq.com/widget/otl/C4vprRctk?slug=factoring-arccanto')

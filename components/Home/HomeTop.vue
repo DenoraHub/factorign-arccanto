@@ -1,7 +1,8 @@
 <template>
-  <v-container style="padding-top: 250px; padding-bottom: 60px;">
+  <v-container class="custom-pt">
     <v-row>
-      <v-col cols="12" sm="6" class="d-flex flex-column">
+      <!-- style="padding-top: 250px; padding-bottom: 60px;" -->
+      <v-col cols="12" sm="6" class="text-center text-lg-left d-flex flex-column">
         <slot name="title">
           <h1>Title</h1>
         </slot>
@@ -9,15 +10,27 @@
           <p>Subtitle</p>
         </slot>
         <v-row class="pt-5">
-          <v-col cols="6">
-            <button type="button" class="v-btn bg-secondary text-none font-weight-bold" @click="pageOptions.modal = !pageOptions.modal">
+          <v-col cols="12" lg="6">
+            <v-btn
+              size="x-large"
+              block
+              color="secondary"
+              class="text-none font-weight-bold custom-btn"
+              @click="pageOptions.modal = !pageOptions.modal"
+            >
               Contactar un asesor
-            </button>
+            </v-btn> 
           </v-col>
-          <v-col cols="6">
-            <button type="button" class="v-btn text-secondary v-btn--variant-outlined text-none font-weight-bold" @click="goToAction">
-              Agendar reunión
-            </button>
+          <v-col cols="12" lg="6">
+            <v-btn
+              size="x-large"
+              variant="outlined"
+              block
+              class="text-none font-weight-bold text-secondary v-btn--variant-outlined text-none font-weight-bold"
+              @click="goToAction"
+            >
+            Agendar reunión
+          </v-btn>
           </v-col>
         </v-row>
       </v-col>
@@ -53,7 +66,7 @@ const pageOptions = reactive({
 })
 
 const { mdAndUp } = useDisplay()
-const dialogWidth = computed(() => mdAndUp.value ? '500' : '100')
+const dialogWidth = computed(() => mdAndUp.value ? '500' : '400')
 
 function goToAction() {
   window.open('https://api.leadconnectorhq.com/widget/otl/C4vprRctk?slug=factoring-arccanto')
