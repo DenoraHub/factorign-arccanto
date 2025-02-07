@@ -45,20 +45,31 @@
         <h1>Aprovecha las ventajas de solicitar financiamiento por factoraje con ArCcanto</h1>
       </v-col>
     </v-row>
-    <v-row class="pt-5 justify-center">
-      <v-col cols="3">
-        <button type="button" class="v-btn bg-secondary text-none font-weight-bold"
-                @click="pageOptions.modal = !pageOptions.modal">
-          Contactar un asesor
-        </button>
-      </v-col>
-      <v-col cols="3">
-        <button type="button" class="v-btn text-secondary v-btn--variant-outlined text-none font-weight-bold"
-                @click="goToAction">
-          Agendar reunión
-        </button>
-      </v-col>
-    </v-row>
+    <v-row class="pt-5">
+          <v-col cols="12" lg="6">
+            <v-btn
+              size="x-large"
+              block
+              color="secondary"
+              class="text-none font-weight-bold custom-btn"
+              @click="pageOptions.modal = !pageOptions.modal"
+            >
+              Contactar un asesor
+            </v-btn> 
+          </v-col>
+          <v-col cols="12" lg="6">
+            <v-btn
+              size="x-large"
+              variant="outlined"
+              block
+              class="text-none font-weight-bold text-secondary v-btn--variant-outlined text-none font-weight-bold"
+              @click="goToAction"
+            >
+            Agendar reunión
+          </v-btn>
+          </v-col>
+        </v-row>
+  
     <v-dialog 
       v-model="pageOptions.modal" 
       scrollable
