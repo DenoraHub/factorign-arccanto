@@ -2,18 +2,18 @@
   <v-container class="my-10">
     <v-row>
       <v-col>
-        <div class="card-description px-15 py-10 text-white">
+        <div class="card-description px-10 px-lg-15 py-10 text-white">
           <v-row>
-            <v-col class="d-flex flex-column justify-start">
-              <h2>Agenda una reunión</h2>
-              <p class="mt-5">Inicia tu solicitud y acelera tu crecimiento</p>
-              <div class="d-flex mt-10">
+            <v-col class="d-flex flex-column justify-center justify-lg-start">
+              <h2 class="text-center text-lg-start">Agenda una reunión</h2>
+              <p class="mt-5 text-center text-lg-start">Inicia tu solicitud y acelera tu crecimiento</p>
+              <div class="d-flex mt-10 justify-center justify-lg-start">
                 <button type="button" class="v-btn bg-primary text-none font-weight-bold" @click="goToAction">
                   Agendar reunión
                 </button>
               </div>
             </v-col>
-            <v-col class="d-flex justify-end align-center">
+            <v-col class="d-flex justify-center justify-lg-end align-center">
               <img src="/images/MeetCalendar.png" alt="" width="164" height="164">
             </v-col>
           </v-row>
