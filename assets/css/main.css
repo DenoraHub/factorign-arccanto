@@ -11,3 +11,28 @@ button {
 .v-container {
     max-width: 67.5rem !important;
 }
+
+html,
+body {
+    overflow-x: hidden !important;
+    width: 100%;
+    max-width: 100%;
+}
+
+.v-application {
+    overflow-x: hidden !important;
+    width: 100%;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}

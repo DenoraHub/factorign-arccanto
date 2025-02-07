@@ -2,11 +2,12 @@
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
-	devtools: {enabled: true},
+	devtools: { enabled: true },
 	css: [
-		'@/assets/css/main.css'
+		'@/assets/css/main.css',
+		'@/assets/css/custom.css'
 	],
-	build:{
+	build: {
 		transpile: ['vuetify']
 	},
 	modules: [
@@ -20,9 +21,9 @@ export default defineNuxtConfig({
 	prismic: {
 		endpoint: "factorajearccanto"
 	},
-	vite:{
+	vite: {
 		vue: {
-			template:{
+			template: {
 				transformAssetUrls
 			}
 		}

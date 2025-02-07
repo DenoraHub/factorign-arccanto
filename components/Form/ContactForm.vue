@@ -2,7 +2,7 @@
   <div class="form-container">
     <iframe
       src="https://api.leadconnectorhq.com/widget/form/NZ8l7CPIeQigBpmPivez"
-      style="width:100%;height:666px;border:none;border-radius:3px"
+      style="width:100%;height:500px;border:none;border-radius:3px;background-color: #e0ecff;"
       id="inline-NZ8l7CPIeQigBpmPivez" 
       :data-layout="{'id':'INLINE'}"
       data-trigger-type="alwaysShow"
@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-// Load the external script using useHead
+
 useHead({
   script: [
     {
@@ -36,6 +36,7 @@ useHead({
 .form-container {
   width: 100%;
   height: 100%;
+  background-color: #e0ecff;
 }
 </style>
 

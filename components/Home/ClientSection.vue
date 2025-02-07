@@ -1,5 +1,5 @@
 <template>
-  <v-container class="my-10">
+  <v-container class="my-10 d-sm-flex d-none">
     <v-row>
       <v-col>
         <div class="card-description px-15 py-10 text-white d-flex flex-column align-center justify-center">

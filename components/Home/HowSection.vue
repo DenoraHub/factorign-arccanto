@@ -6,7 +6,7 @@
       </v-col>
     </v-row>
     <v-row class="mt-5">
-      <v-col>
+      <v-col cols="12" md="4">
         <div class="card-description px-8 py-10 text-primary fill-height ga-4">
           <img src="/images/HowFirstImage.png" height="80" width="39" alt="">
           <h3 class="text-center">Inicia tu solicitud</h3>
@@ -14,7 +14,7 @@
             documentos requeridos hacia la apertura de tu cuenta.</p>
         </div>
       </v-col>
-      <v-col>
+      <v-col cols="12" md="4">
         <div class="card-description px-8 py-10 text-primary fill-height ga-4">
           <img src="/images/HowSecondImage.png" height="80" width="54" alt="">
           <h2 class="text-center">Selecciona las facturas</h2>
@@ -22,7 +22,7 @@
             proceso de selección y aprobación</p>
         </div>
       </v-col>
-      <v-col>
+      <v-col cols="12" md="4">
         <div class="card-description px-8 py-10 text-primary fill-height ga-4">
           <img src="/images/HowThirdImage.png" height="80" width="50" alt="">
           <h2 class="text-center">Recibe el financiemiento</h2>
