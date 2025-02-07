@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-// Load the external script using useHead
+
 useHead({
   script: [
     {
